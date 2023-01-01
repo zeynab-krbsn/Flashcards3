@@ -1,17 +1,17 @@
 package com.example.flashcards;
 
 public class Flashcards {
-    private String flashcards;
+    private String Header;
+    private String Description ;
 
 
-    public Flashcards(String flashcards) {
-        this.flashcards = flashcards;
+    public Flashcards(String H , String D ) {
+        this.Header = H;
+        Description = D  ;
     }
-    public String getFlashcards(){
-        return flashcards;
+    public String getHeader(){
+        return Header;
     }
+    public String getDescription() {return  Description ;}
 
-    public void setFlashcards(String flashcards) {
-        this.flashcards=flashcards;
-    }
 }

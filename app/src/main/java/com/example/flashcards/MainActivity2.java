@@ -100,8 +100,8 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View view, int groupPosition, int childPosition, long id) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
-                Log.d("lesson",groupList.get(groupPosition));
-                Log.d("podman",childList.get(childPosition));
+                intent.putExtra("lesson",groupList.get(groupPosition));
+                intent.putExtra("podman",childList.get(childPosition));
                 view.getContext().startActivity(intent);
 
                 return true;
