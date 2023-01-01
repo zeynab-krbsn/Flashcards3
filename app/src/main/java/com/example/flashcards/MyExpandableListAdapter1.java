@@ -65,7 +65,7 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
         String name=getGroup(i).toString();
         int icon=getGroupListIcon(i);
-//        int i=get
+
         if (view==null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.group_item1, null);

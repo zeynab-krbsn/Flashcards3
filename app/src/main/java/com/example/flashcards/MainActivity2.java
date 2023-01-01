@@ -19,7 +19,6 @@ import java.util.Map;
 public class MainActivity2 extends AppCompatActivity {
 
     String[] child={"پودمان 1","پودمان 2","پودمان 3","پودمان 4","پودمان 5"};
-//    String[] group_info = {"دانش فنی پایه", "نصب و راه اندازی سیستم های رایانه ای"};
     String[] group_info;
     List<String> groupList;
     List<String> childList;
