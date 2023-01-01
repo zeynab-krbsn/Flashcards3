@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -16,11 +17,13 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
     private Context context;
     private Map<String, List<String>> collection;
     private List<String> groupList;
+    private List<Integer> groupListIcon;
 
-    public MyExpandableListAdapter1(Context context, List<String> groupList, Map<String, List<String>> collection) {
+    public MyExpandableListAdapter1(Context context, List<String> groupList, Map<String, List<String>> collection, List<Integer> groupListIcon ) {
         this.context=context;
         this.collection=collection;
         this.groupList=groupList;
+        this.groupListIcon=groupListIcon;
     }
 
     @Override
@@ -61,14 +64,18 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
         String name=getGroup(i).toString();
+        int icon=getGroupListIcon(i);
+//        int i=get
         if (view==null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.group_item1, null);
 
         }
         TextView item = view.findViewById(R.id.textViewField);
-        item.setTypeface(null, Typeface.BOLD);
+        ImageView itemIcon=view.findViewById(R.id.ImageViewIcon);
         item.setText(name);
+        itemIcon.setImageResource(icon);
+
         return view;
     }
 
@@ -89,4 +96,9 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
     public boolean isChildSelectable(int i, int i1) {
         return true;
     }
+
+    public int getGroupListIcon(int i) {
+        return groupListIcon.get(i);
+    }
+
 }

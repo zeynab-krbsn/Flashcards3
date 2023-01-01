@@ -16,6 +16,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/teal_700"
         android:layout_marginBottom="15dp"
+
         app:layout_constraintBottom_toTopOf="@id/expandableListView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,18 +38,24 @@
     <ExpandableListView
         android:id="@+id/expandableListView1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="20dp"
-        android:dividerHeight="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:dividerHeight="15dp"
         android:divider="@color/white"
         android:childDivider="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
-        app:layout_constraintTop_toBottomOf="@+id/RelativeLayoutHeader"
 
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
     </ExpandableListView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -59,9 +66,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expandableListView1"
-        app:menu="@menu/menu"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 

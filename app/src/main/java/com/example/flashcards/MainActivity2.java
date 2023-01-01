@@ -23,6 +23,7 @@ public class MainActivity2 extends AppCompatActivity {
     String[] group_info;
     List<String> groupList;
     List<String> childList;
+    List<Integer> groupListIcon;
     Map<String, List<String>> collection;
     ExpandableListView expandableListView;
     MyExpandableListAdapter1 expandableListAdapter;
@@ -83,7 +84,7 @@ public class MainActivity2 extends AppCompatActivity {
         createCollection();
 
         expandableListView = findViewById(R.id.expandableListView2);
-        expandableListAdapter = new MyExpandableListAdapter1(this, groupList, collection);
+        expandableListAdapter = new MyExpandableListAdapter1(this, groupList, collection,groupListIcon);
         expandableListView.setAdapter(expandableListAdapter);
         expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             int lastExpandedPosition = -1;

@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     String[] child={"دهم","یازدهم","دوازدهم"};
     String[] child2={"دهم"};
     String[] group_info = {"شبکه و نرم افزار", "حسابداری","پویانمایی","فتو گرافیک","گرافیک","نقاشی"};
+    int[] icon={R.drawable.icon0,R.drawable.icon1,R.drawable.icon2,R.drawable.icon3,R.drawable.icon4,R.drawable.icon5};
     List<String> groupList;
+    List<Integer> groupListIcon;
     List<String> childList;
     Map<String, List<String>> collection;
     ExpandableListView expandableListView;
@@ -31,10 +33,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         createGroupList();
+        createGroupListIcon();
         createCollection();
 
         expandableListView = findViewById(R.id.expandableListView1);
-        expandableListAdapter = new MyExpandableListAdapter1(this, groupList, collection);
+        expandableListAdapter = new MyExpandableListAdapter1(this, groupList, collection,groupListIcon);
         expandableListView.setAdapter(expandableListAdapter);
         expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             int lastExpandedPosition = -1;
@@ -92,6 +95,12 @@ public class MainActivity extends AppCompatActivity {
         groupList = new ArrayList<>();
         for (String g: group_info)
             groupList.add(g);
+    }
+
+    private void createGroupListIcon() {
+        groupListIcon = new ArrayList<>();
+        for (int g: icon)
+            groupListIcon.add(g);
     }
 }
 

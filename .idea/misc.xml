@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android studio/Flashcards/app/src/main/res/drawable/border.xml" value="0.1707236842105263" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/drawable/ic_bookmark.xml" value="0.1707236842105263" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/activity_main2.xml" value="0.26718547341115434" />
@@ -10,7 +11,9 @@
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/activity_main4.xml" value="0.16052631578947368" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/activity_main5.xml" value="0.10230263157894737" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/child_item.xml" value="0.16052631578947368" />
+        <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/child_item1.xml" value="0.16052631578947368" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/group_item.xml" value="0.16052631578947368" />
+        <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/group_item1.xml" value="0.16052631578947368" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/layout/recyclerview_item.xml" value="0.1194078947368421" />
         <entry key="..\:/android studio/Flashcards/app/src/main/res/menu/menu.xml" value="0.13717105263157894" />
       </map>

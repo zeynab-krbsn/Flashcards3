@@ -10,7 +10,7 @@ public class MainActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.flashcards);
 
         TextView textViewHeader=findViewById(R.id.TextViewHeader);
         TextView textViewDescription=findViewById(R.id.TextViewDescription);
