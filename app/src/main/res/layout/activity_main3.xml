@@ -8,27 +8,40 @@
     <RelativeLayout
         android:id="@+id/relativeLayoutHeader"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/teal_700"
+        android:layout_marginBottom="15dp"
 
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/recyclerview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" >
 
-    <TextView
-        android:id="@+id/textViewHeaderLesson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="درس"
-        />
+        <TextView
+            android:id="@+id/textViewHeaderLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/border"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/far_bardiya"
+            android:text="درس"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     <TextView
         android:id="@+id/textViewHeaderPodman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="پودمان"
-        android:layout_marginStart="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/far_bardiya"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         />
     </RelativeLayout>
 
@@ -36,6 +49,11 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
