@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     String[] group_info = {"شبکه و نرم افزار", "حسابداری","پویانمایی","فتو گرافیک","گرافیک","نقاشی"};
     int[] icon={R.drawable.icon0,R.drawable.icon1,R.drawable.icon2,R.drawable.icon3,R.drawable.icon4,R.drawable.icon5};
     List<String> groupList;
-    List<Integer> groupListIcon;
+    List<Integer> groupListIcon ;
     List<String> childList;
     Map<String, List<String>> collection;
     ExpandableListView expandableListView;

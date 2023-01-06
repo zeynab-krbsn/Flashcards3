@@ -74,7 +74,10 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
         TextView item = view.findViewById(R.id.textViewField);
         ImageView itemIcon=view.findViewById(R.id.ImageViewIcon);
         item.setText(name);
-        itemIcon.setImageResource(icon);
+        if (icon != -1)
+            itemIcon.setImageResource(icon);
+        else
+            itemIcon.setVisibility(View.GONE);
 
         return view;
     }
@@ -98,6 +101,8 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
     }
 
     public int getGroupListIcon(int i) {
+        if (groupListIcon == null)
+            return  -1 ;
         return groupListIcon.get(i);
     }
 
