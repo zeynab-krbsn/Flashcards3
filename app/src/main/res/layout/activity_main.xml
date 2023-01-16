@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#273D55"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:background="@color/teal_700"
+        android:background="#4B6178"
         android:layout_marginBottom="15dp"
 
         app:layout_constraintBottom_toTopOf="@id/expandableListView1"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/far_bardiya"
+            android:fontFamily="@font/b_nazanin"
             android:text="فلش کارت های دروس هنرستان"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -44,8 +44,8 @@
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20dp"
         android:dividerHeight="15dp"
-        android:divider="@color/white"
-        android:childDivider="@color/white"
+        android:divider="@android:color/transparent"
+        android:childDivider="@android:color/transparent"
 
 
 

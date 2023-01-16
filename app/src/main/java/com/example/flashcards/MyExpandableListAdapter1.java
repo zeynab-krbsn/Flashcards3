@@ -70,6 +70,7 @@ public class MyExpandableListAdapter1 extends BaseExpandableListAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.group_item1, null);
 
+
         }
         TextView item = view.findViewById(R.id.textViewField);
         ImageView itemIcon=view.findViewById(R.id.ImageViewIcon);

@@ -69,7 +69,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
             else if (lesson.equals("تجارت الکترونیک و امنیت شبکه") && podman.equals("پودمان 1")) {
                 flashcardsArrayList.add(new Flashcards("ایده پردازی","فکر کردن به مشکلات با در نظر گرفتن محدودیت و شرایط برای رسیدن به راه حل جدید و با کیفیت"));
-                flashcardsArrayList.add(new Flashcards("روش عمل عیده پردازی", "تکنیک گرافیکیست است برای ترسیم ارتباط میان قسمتهای مختلف اطلاعات"));
+                flashcardsArrayList.add(new Flashcards("روش عمل ایده پردازی", "تکنیک گرافیکیست است برای ترسیم ارتباط میان قسمتهای مختلف اطلاعات"));
                 flashcardsArrayList.add(new Flashcards("روش اسکمپر", "تکنیکی ساده کاربردی و قدرتمند شامل مجموعهای از واژه های سوال برانگیز که راه حل های بیشتر و باکیفیت تری برای حل مسئله ارائه می دهند"));
                 flashcardsArrayList.add(new Flashcards("مراحل اسکمپر", "1. جایگزینی 2.  ترکیب 3. سازگار کردن یا اقتباس 4. تقویت و اصلاح 5. به کار بستن دیگر کاربرد ها 6. حذف 7. معکوس کردن یا بازآرایی"));
                 flashcardsArrayList.add(new Flashcards("اجزای مدل کسب و کار", "1. مشتری شناسی 2. طراحی ارزش ارزش پیشنهادی 3. تعیین کانال توزیع 4. ارتباط مشتریان 5. جریان درآمد 6. منابع کلیدی ۷ فعالیت های کلیدی ۸ شرکایی کلید این جریان هزینه"));
@@ -91,7 +91,7 @@ public class MainActivity3 extends AppCompatActivity {
 
             }
             else if (lesson.equals("تجارت الکترونیک و امنیت شبکه") && podman.equals("پودمان 2")) {
-                //group_info = new String[]{"5", "", ""};
+                flashcardsArrayList.add(new Flashcards("تست","این یک تست است"));
             }else if (lesson.equals("تجارت الکترونیک و امنیت شبکه") && podman.equals("پودمان 3")) {
                 //group_info = new String[]{"5", "", ""};
             }else if (lesson.equals("تجارت الکترونیک و امنیت شبکه") && podman.equals("پودمان 4")) {

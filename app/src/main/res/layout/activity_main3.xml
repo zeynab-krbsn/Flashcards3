@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#273D55"
     tools:context=".MainActivity3">
     <RelativeLayout
         android:id="@+id/relativeLayoutHeader"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:background="@color/teal_700"
+        android:background="#4B6178"
         android:layout_marginBottom="15dp"
 
         app:layout_constraintBottom_toTopOf="@id/recyclerview"
@@ -23,12 +24,10 @@
             android:id="@+id/textViewHeaderLesson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@drawable/border"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
-            android:fontFamily="@font/far_bardiya"
+            android:fontFamily="@font/b_nazanin"
             android:text="درس"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -39,7 +38,7 @@
         android:text="پودمان"
         android:layout_centerVertical="true"
         android:layout_marginStart="50dp"
-        android:fontFamily="@font/far_bardiya"
+        android:fontFamily="@font/b_nazanin"
         android:textColor="@color/white"
         android:textSize="20sp"
         />
